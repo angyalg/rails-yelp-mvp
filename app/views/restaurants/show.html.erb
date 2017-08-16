@@ -1,0 +1,14 @@
+<h1>Restaurant/Show</h1>
+
+<p><%= @restaurant.name %></p>
+<p><%= @restaurant.address %></p>
+<p><%= @restaurant.phone_number %></p>
+<p><%= @restaurant.category %></p>
+
+<h2>Reviews</h2>
+<% @reviews.each do |r| %>
+  <p>Rating: <%= r.rating %></p>
+  <p>Content: <%= r.content %></p>
+<% end %>
+
+
